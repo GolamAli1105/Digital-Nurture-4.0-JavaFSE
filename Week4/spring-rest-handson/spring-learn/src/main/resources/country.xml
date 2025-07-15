@@ -26,5 +26,10 @@
         	</list>
     	</constructor-arg>
 	</bean>
+	
+	<bean id="country" class="com.cognizant.spring_learn.model.Country">
+        <property name="code" value="IN" />
+        <property name="name" value="India" />
+    </bean>
 
 </beans>

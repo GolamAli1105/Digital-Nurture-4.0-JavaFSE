@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.cognizant.spring_learn.model.Country;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -28,10 +30,17 @@ public class SpringLearnApplication {
 		}
 	}
 	
+	public static void displayCountry() {
+        ApplicationContext context = new ClassPathXmlApplicationContext("country.xml");
+        Country country = context.getBean("country", Country.class);
+        LOGGER.debug("Country : {}", country.toString());
+    }
+	
 	public static void main(String[] args) {
 		LOGGER.info("START");
 		SpringApplication.run(SpringLearnApplication.class, args);
 		displayDate();
+		displayCountry();
 		LOGGER.info("END");
 	}
 
