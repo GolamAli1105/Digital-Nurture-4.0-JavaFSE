@@ -41,7 +41,6 @@ public class AuthenticationController {
             return ResponseEntity.status(401).body("Invalid credentials");
         }
 
-        // ✅ Proper way: get a Key object using Keys.hmacShaKeyFor
         Key key = Keys.hmacShaKeyFor(secretKey.getBytes(StandardCharsets.UTF_8));
 
         String jwtToken = Jwts.builder()
