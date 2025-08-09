@@ -1,3 +1,6 @@
 [submodule "Week8/1. GIT-HOL/GitDemo"]
 	path = Week8/1. GIT-HOL/GitDemo
 	url = https://github.com/GolamAli1105/GitDemo
+[submodule "Week8/3. GIT-HOL/BranchingDemo"]
+	path = Week8/3. GIT-HOL/BranchingDemo
+	url = https://github.com/GolamAli1105/BranchingDemo
