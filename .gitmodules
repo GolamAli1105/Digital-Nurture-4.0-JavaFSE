@@ -7,3 +7,6 @@
 [submodule "Week8/4. GIT-HOL/GitHol4"]
 	path = Week8/4. GIT-HOL/GitHol4
 	url = https://github.com/GolamAli1105/GitHol4
+[submodule "Week8/5. GIT-HOL/GitHol5"]
+	path = Week8/5. GIT-HOL/GitHol5
+	url = https://github.com/GolamAli1105/GitHol5
